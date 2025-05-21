@@ -50,7 +50,7 @@ export class LobeAzureAI implements LobeRuntimeAI {
     }));
 
     try {
-      const response = this.client.path('/chat/completions').post({
+      const response = this.client.path('').post({
         body: {
           messages: updatedMessages as OpenAI.ChatCompletionMessageParam[],
           model,
